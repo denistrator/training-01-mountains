@@ -49,7 +49,8 @@
 		&-primary-img-control {
 			position: absolute;
 			top: in-perc(-36, 667);
-			left: in-perc(563);
+			// left: in-perc(563);
+			left: 48.1%;
 			width: in-perc(806);
 			height: in-perc(570, 667);
 			z-index: 1;
@@ -57,10 +58,15 @@
 		&-secondary-img-control {
 			position: absolute;
 			bottom: in-perc(40, 667);
-			left: in-perc(474);
+			// left: in-perc(474);
+			left: 40.3%;
 			width: in-perc(350);
 			height: in-perc(350, 667);
 			z-index: 2;
 		}
+	}
+	@media (min-width: 1919px) {
+		background-size: contain;
+		background-position: top 26px left 100px;
 	}
 }

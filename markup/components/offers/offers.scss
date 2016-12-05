@@ -1,7 +1,10 @@
 .offers {
+	&-pixelPerfect-helper-p-t {
+		padding-top: 5.1%;
+	}
 	&-bg {
 		&-primary {
-			padding-bottom: 270px;
+			padding-bottom: 261px;
 
 			background-position: bottom center;
 			background-repeat: no-repeat;
@@ -12,7 +15,7 @@
 			margin-right: auto;
 
 			background-size: cover;
-			background-position: top 25px center;
+			background-position: top 16px center;
 			background-repeat: no-repeat;
 			&-inner {
 				padding-bottom: in-perc(210, 1470);

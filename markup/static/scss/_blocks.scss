@@ -105,6 +105,8 @@ $overlay-opacity:            0.65 !default;
 			text-align: center;
 		}
 		font-size: $block-title-size;
+		letter-spacing: 3px;
+		letter-spacing: 2.7px;
 		margin: 0;
 		position: relative;
 		&:before {
@@ -119,11 +121,14 @@ $overlay-opacity:            0.65 !default;
 		}
 		&-sm {
 			font-size: 20px;
+			letter-spacing: 2px;
+			letter-spacing: 1.8px;
 			&:not(.prevent-ta){
 				text-align: left;
 			}
 			&:before {
 				margin-left: 0;
+				margin-bottom: 4.3%;
 			}
 		}
 	}
@@ -133,7 +138,9 @@ $overlay-opacity:            0.65 !default;
 		}
 		font-size: $block-description-size;
 		margin: 0;
-		margin-top: 17px;
+		line-height: 1.6;
+		margin-top: 13px;
+		letter-spacing: 0.15px;
 	}
 }
 
@@ -168,19 +175,23 @@ $overlay-opacity:            0.65 !default;
 	}
 	&-lg {
 		padding-top: in-perc(150);
+		// padding-top: 10.4%;
 		padding-bottom: in-perc(250);
+		padding-bottom: 20.82982%;
 	}
 }
 .m {
 	&t {
 		&-m {
-			margin-top: in-perc(71);
+			// margin-top: in-perc(71);
+			margin-top: 6%;
 		}
 		&-m-lg {
 			margin-top: in-perc(90);
 		}
 		&-lg {
-			margin-top: in-perc(100);
+			// margin-top: in-perc(100);
+			margin-top: 7.2%;
 		}
 	}
 }

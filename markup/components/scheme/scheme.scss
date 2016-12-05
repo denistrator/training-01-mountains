@@ -4,6 +4,9 @@
 .scheme {
 	position: relative;
 	counter-reset: scheme-number;
+	&-pixelPerfect-helper-p-t {
+		padding-top: 5.8%;
+	}
 	&-item {
 		position: relative;
 		
@@ -14,7 +17,7 @@
 			padding-bottom: 100%;
 		}
 		&-inner {
-			padding: 10%;
+			padding: 15%;
 			@include abs-fill-size;
 		}
 		&-bg {
@@ -29,7 +32,7 @@
 			&-box {
 				width: 100%;
 				height: 100%;
-				padding: 20%;
+				padding: 26%;
 				overflow: visible !important;
 			}
 			&-figure {
@@ -44,7 +47,7 @@
 			text-align: center;
 			color: #000;
 			line-height: 1;
-			font-size: 35px;
+			font-size: 38px;
 			&:before {
 				display: table-cell;
 				vertical-align: middle;
@@ -63,6 +66,7 @@
 			font-weight: 900;
 		}
 		margin: 0;
+		margin-top: -7.5%;
 		padding: 0 10%;
 		text-align: center;
 		color: #949494;
@@ -73,7 +77,8 @@
 			position: absolute;
 			top: 0;
 			width: 100%;
-			padding-bottom: in-perc(70, 205);			
+			// padding-bottom: in-perc(70, 205);
+			padding-bottom: 24.5%;		
 			&:before {
 				content: counter(scheme-number);
 				counter-increment: scheme-number;

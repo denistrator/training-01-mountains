@@ -1,6 +1,6 @@
 .contactForm {
 	margin: auto;
-	padding: 35px $grid-gutter-width-base 50px;
+	padding: 35px $grid-gutter-width-base 52px;
 	max-width: 514px;
 	text-align: center;
 	border-radius: 8px;
@@ -14,7 +14,8 @@
 		padding-top: in-perc(140);
 		&-helper {
 			position: relative;
-			padding-bottom: in-perc(160);
+			// padding-bottom: in-perc(160);
+			padding-bottom: 15.5%;
 		}
 	}
 	&-blur {
@@ -24,7 +25,7 @@
 		padding-bottom: (in-perc(160));
 		overflow: hidden;
 
-		background-image: url('%=static=%/content/bg-contact.png');
+		// background-image: url('%=static=%/content/bg-contact.jpg');
 		background-repeat: no-repeat;
 		background-position: bottom center;
 		background-clip: content-box;
@@ -47,7 +48,7 @@
 	}
 	&-desc {
 		margin: 0;
-		margin-bottom: 30px;
+		margin-bottom: 37px;
 		color: #383e4a;
 	}
 }

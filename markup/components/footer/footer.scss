@@ -11,6 +11,10 @@
     &-copy {
         margin: 0;
         color: #6c97a6;
+        font-size: 18px;
+        @include media-breakpoint-up(sm) {
+            text-align: left;
+        }
     }
     &-socials {
         &-list {
@@ -122,6 +126,11 @@
         font-size: 27px;
         font-weight: 900;
         color: #7ecada;
+        font-family: Roboto, sans-serif;
+        font-weight: 900;
+        @include media-breakpoint-up(sm) {
+            text-align: right;
+        }
     }
 }
 
