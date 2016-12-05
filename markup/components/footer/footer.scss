@@ -1,0 +1,138 @@
+.footer {
+    &-holder {
+        background-color: #3e5d66;
+    }
+    padding: 20px 0;
+    margin: -10px 0;
+    &-block {
+        text-align: center;
+        padding: 10px 0;
+    }
+    &-copy {
+        margin: 0;
+        color: #6c97a6;
+    }
+    &-socials {
+        &-list {
+            @include nl;
+        }
+        &-item {
+            display: inline-block;
+        }
+        &-link {
+        	position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin: 1px;
+            overflow: hidden;
+            text-align: center;
+            color: #fff;
+            background-color: #a5a5a5;
+            
+            transition: font-size 0.25s;
+            &:before {
+                text-shadow: rgba(0, 0, 0, 0.32) 3px 3px 4px;
+            }
+            &:after {
+            	@extend .icomoon-helper;
+            	@include abs-fill-size;
+	            line-height: 40px;
+	            overflow: hidden;
+	            text-align: center;
+	            opacity: 0.1;
+
+                text-shadow: rgba(0, 0, 0, 1) 1.06066px 1.06066px 1px,
+			                 rgba(0, 0, 0, 1) 1.59099px 1.59099px 1px,
+			                 rgba(0, 0, 0, 1) 2.12132px 2.12132px 1px,
+							 rgba(0, 0, 0, 1) 2.65165px 2.65165px 1px,
+							 rgba(0, 0, 0, 1) 3.18198px 3.18198px 1px,
+							 rgba(0, 0, 0, 1) 3.71231px 3.71231px 1px,
+							 rgba(0, 0, 0, 1) 4.24264px 4.24264px 1px,
+							 rgba(0, 0, 0, 1) 4.77297px 4.77297px 1px,
+							 rgba(0, 0, 0, 1) 5.30330px 5.30330px 1px,
+							 rgba(0, 0, 0, 1) 5.83363px 5.83363px 1px,
+							 rgba(0, 0, 0, 1) 6.36396px 6.36396px 1px,
+							 rgba(0, 0, 0, 1) 6.89429px 6.89429px 1px,
+							 rgba(0, 0, 0, 1) 7.42462px 7.42462px 1px,
+							 rgba(0, 0, 0, 1) 7.95495px 7.95495px 1px,
+							 rgba(0, 0, 0, 1) 8.48528px 8.48528px 1px,
+							 rgba(0, 0, 0, 1) 9.01561px 9.01561px 1px,
+							 rgba(0, 0, 0, 1) 9.54594px 9.54594px 1px,
+							 rgba(0, 0, 0, 1) 10.0763px 10.0763px 1px,
+							 rgba(0, 0, 0, 1) 10.6066px 10.6066px 1px,
+							 rgba(0, 0, 0, 1) 11.1369px 11.1369px 1px,
+							 rgba(0, 0, 0, 1) 11.6673px 11.6673px 1px,
+							 rgba(0, 0, 0, 1) 12.1976px 12.1976px 1px,
+							 rgba(0, 0, 0, 1) 12.7279px 12.7279px 1px,
+							 rgba(0, 0, 0, 1) 13.2583px 13.2583px 1px,
+							 rgba(0, 0, 0, 1) 13.7886px 13.7886px 1px,
+							 rgba(0, 0, 0, 1) 14.3189px 14.3189px 1px,
+							 rgba(0, 0, 0, 1) 14.8492px 14.8492px 1px,
+							 rgba(0, 0, 0, 1) 15.3796px 15.3796px 1px,
+							 rgba(0, 0, 0, 1) 15.9099px 15.9099px 1px,
+							 rgba(0, 0, 0, 1) 16.4402px 16.4402px 1px,
+							 rgba(0, 0, 0, 1) 16.9706px 16.9706px 1px,
+							 rgba(0, 0, 0, 1) 17.5009px 17.5009px 1px,
+							 rgba(0, 0, 0, 1) 18.0312px 18.0312px 1px,
+							 rgba(0, 0, 0, 1) 18.5616px 18.5616px 1px,
+							 rgba(0, 0, 0, 1) 19.0919px 19.0919px 1px,
+							 rgba(0, 0, 0, 1) 19.6222px 19.6222px 1px,
+							 rgba(0, 0, 0, 1) 20.1525px 20.1525px 1px,
+							 rgba(0, 0, 0, 1) 20.6829px 20.6829px 1px,
+							 rgba(0, 0, 0, 1) 21.2132px 21.2132px 1px,
+							 rgba(0, 0, 0, 1) 21.7435px 21.7435px 1px,
+							 rgba(0, 0, 0, 1) 22.2739px 22.2739px 1px,
+							 rgba(0, 0, 0, 1) 22.8042px 22.8042px 1px,
+							 rgba(0, 0, 0, 1) 23.3345px 23.3345px 1px,
+							 rgba(0, 0, 0, 1) 23.8649px 23.8649px 1px,
+							 rgba(0, 0, 0, 1) 24.3952px 24.3952px 1px,
+							 rgba(0, 0, 0, 1) 24.9255px 24.9255px 1px,
+							 rgba(0, 0, 0, 1) 25.4558px 25.4558px 1px,
+							 rgba(0, 0, 0, 1) 25.9862px 25.9862px 1px,
+							 rgba(0, 0, 0, 1) 26.5165px 26.5165px 1px;
+				
+            }
+            &:hover {
+                color: #fff;
+                font-size: 20px;
+            }
+            &[class*="twitter"] {
+                background-color: #29c5f6;
+                &:after {
+					content: "\e908";
+                }
+            }
+            &[class*="facebook"] {
+                background-color: #6788ce;
+                &:after {
+					content: "\e909";
+                }
+            }
+            &[class*="vk"] {
+                background-color: #54769a;
+                &:after {
+					content: "\e90a";
+                }
+            }
+        }
+    }
+    &-number {
+        font-size: 27px;
+        font-weight: 900;
+        color: #7ecada;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .footer {
+        display: table;
+        width: 100%;
+        &-block {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0;
+        }
+    }
+}

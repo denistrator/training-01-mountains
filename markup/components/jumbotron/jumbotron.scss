@@ -1,0 +1,107 @@
+.jumbotron {
+	position: relative;
+	min-height: 480px;
+	min-height: 100vh; // delete?
+	height: 100%; // delete?
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url('../img/content/header-bg.jpg');
+	z-index: 1;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+    	top: 31.7%;
+    	left: $grid-gutter-width-base / 2;
+    	right: $grid-gutter-width-base / 2;
+    	max-width: 1140px;
+    	height: 3px;
+    	margin: auto;
+    	background-color: #fff;
+    	z-index: -1;
+	}
+	&-bg-helper {
+		min-height: 480px;
+		min-height: 100vh; // delete?
+		height: 100%; // delete?
+		height: 100vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-image: url('../img/content/header-bg-2nd-layer.png');
+	}
+	&-content {
+		&-control {
+			position: absolute;
+	    	top: 31.7%;
+	    	left: 0;
+	    	right: 0;
+	    	padding-top: 3px;
+		}
+		&-wrap {
+			max-width: 500px;
+		}
+		max-height: 270px; // what? It's just fallback X_x
+		max-height: 66vh;
+		overflow-y: auto;
+		overflow-x: hidden;
+	    border: 3px solid #fff;
+	    border-top: transparent;
+	    color: #fff;
+	    padding: 15px;
+	    @include media-breakpoint-up(sm){
+	    	padding: in-perc(38);
+	    	padding-top: 3.8%;
+	    	padding-left: 3.6%;
+	    }
+	}
+	&-title {
+		margin: 0;
+		margin-top: -9px;
+		letter-spacing: 6px;
+		line-height: 0.95;
+		&-styled {
+			margin: 0;
+			margin-top: -14px;
+			letter-spacing: 1px;
+			letter-spacing: 1.2px;
+			line-height: 0.85; 
+			font-family: Bringin;
+			font-size: 66px;
+			font-weight: 400;
+			color: #56c7ff;
+		}
+	}
+	&-desc {
+		margin: 12px 0 0;
+		line-height: 1.6;
+		opacity: .75;
+		font-size: 18px;
+		@media (min-width: 500px){
+			padding-right: 30px;
+		}
+	}
+	&-btn {
+		margin-top: 25px;
+	}
+}
+.photo-man-and-mountains {
+	background-position: 50% 50%;
+	@media (max-width: 800px){
+		background-position: 55% 50%;
+	}
+	@media (max-width: 660px){
+		background-position: 60% 50%;
+	}
+	@media (max-width: 500px){
+		background-position: 63% 50%;
+	}
+	@media (max-width: 420px){
+		background-position: 64% 50%;
+	}
+	@media (max-width: 340px){
+		background-position: 65% 50%;
+	}
+}

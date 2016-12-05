@@ -1,0 +1,31 @@
+<div class="container-fluid">
+	<div id="clientsQuotes">
+		<div class="mt-m">
+			<h2 class="block-title">our Clients say</h2>
+		</div>
+		<div class="mt-m-lg">
+			<div class="clientsQuotes ver-indents-parent">
+				<div class="row">
+					{{#each clientsQuotes}}
+						<div class="col-sm-6 col-xxs-10 offset-xxs-1 offset-sm-0">
+							<div class="clientsQuotes-holder ver-indents-child">
+								<q class="clientsQuotes-quote">
+									<p class="clientsQuotes-quote-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+								</q>
+								<div class="clientsQuotes-autor">
+									<div class="clientsQuotes-autor-img-holder">
+										<img src="%=static=%/img/content/{{imgName}}.png" alt="Quote" class="clientsQuotes-autor-img">
+									</div>
+									<div class="clientsQuotes-autor-data">
+										<span class="clientsQuotes-autor-name">{{autorName}}</span>
+										<span class="clientsQuotes-autor-position">{{autorPosition}}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

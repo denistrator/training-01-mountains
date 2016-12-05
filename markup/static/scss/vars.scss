@@ -1,0 +1,113 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+@import "bower_components/bootstrap/scss/variables";
+
+// colors
+$accent: #36aeea;
+
+
+// type
+$body-color: #2c2e37;
+$body-bg: #fff;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-family-base: "Open Sans", sans-serif;
+$margin-bottom-p: 15px;
+$link-color: $accent;
+$link-color-hover: lighten($link-color, 10%);
+$link-decoration: none;
+$link-decoration-hover: none;
+$heading-font-family: inherit;
+$heading-font-weight: 700;
+$heading-color: inherit;
+$heading-font-size-1: 50px;
+$heading-font-size-2: 30px;
+$heading-font-size-3: 20px;
+$heading-font-size-4: 17px;
+$heading-font-size-5: 14px;
+$heading-font-size-6: 12px;
+
+// buttons
+$btn-color: #fff;
+$btn-font-size: 16px;
+$btn-bg: $accent;
+$btn-border: 1px solid $btn-bg;
+$btn-border-radius: 4px;
+$btn-padding: 12px 24px;
+
+$btn-color-hover:  $btn-color;
+$btn-bg-hover: lighten($btn-bg, 10%);
+$btn-border-color-hover: $btn-bg-hover;
+
+// forms
+$form-color: $body-color;
+$form-bg: #fff;
+$form-border: 1px solid $form-bg;
+$form-border-radius: 4px;
+$form-height: 60px;
+$form-padding-x: 20px;
+$form-font-size: 16px;
+$form-line-height: 1.4;
+$form-margin-bottom: 20px;
+
+$form-label-color: $body-color;
+$form-label-font-size: 16px;
+$form-label-margin-bottom: 4px;
+
+// blocks
+$block-title-size:      30px;
+$block-description-size:16px;
+$block-image-size:      cover;
+$overlay-opacity:       0.65;
+
+$bg-darken: #f6f4f4;
+$bg-darken-2: #f8f9fa;
+
+
+
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$container-max-width: 1170;
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xs: 480px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: $container-max-width + px
+);
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:               12;
+$grid-gutter-width-base:     30px;
+$grid-gutter-widths: (
+ xxs: $grid-gutter-width-base,
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+);

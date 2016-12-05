@@ -1,0 +1,129 @@
+.order {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-image: url('../img/content/bgs-order/bg-order.png');
+	&-form-control {
+		
+	}
+	&-form {
+		position: relative;
+		margin-top: 25px;
+		padding: 10px;
+		border-radius: 4px;
+		background-color: #fff;
+	}
+	&-form-input-group {
+		position: relative;
+		padding: 15px;
+		& + & {
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 1px;
+				width: 80%;
+				margin: auto;
+				z-index: 1;
+				background-color: #ebebeb;
+			}
+		}
+	}
+	&-form-input {
+		@include placeholder(#848484);
+		position: relative;
+		width: 100%;
+		padding: 0 10px;
+		border-color: transparent;
+		text-overflow: ellipsis;
+		&:focus {
+			outline-color: transparent;
+		}
+	}
+	&-form-btn {
+		&-holder {
+			margin-top: 15px;
+		}
+		width: 100%;
+		padding: 17px 30px;
+	}
+	@include media-breakpoint-up(xs){
+		&-form-input-group {
+			
+			
+		}
+		&-form-btn {
+			&-holder {
+				
+			}
+		}
+	}
+	@include media-breakpoint-up(sm){
+		&-form-input-group {
+			padding-right: 33%;
+			& + & {
+				&:before {
+					left: 35px;
+					right: auto;
+					width: 50%;
+					margin: 0;
+				}		
+			}
+		}
+		&-form-btn {
+			&-holder {
+				position: absolute;
+			    right: 15px;
+			    top: 50%;
+			    width: 33%;
+			    margin-top: 0;
+			    transform: translateY(-50%);	
+			}
+		}
+	}
+	@include media-breakpoint-up(md){
+		&-form {
+			display: table;
+			width: 100%;
+			padding: 3px 3px 3px 0;
+		}
+		&-form-input-group {
+			display: table-cell;
+			padding: 15px;
+			& + & {
+				&:before {
+					left: 0;
+					top: 0;
+					bottom: 0;
+					right: auto;
+					height: 35px;
+					width: 1px;
+					margin: auto;
+				}
+			}
+		}
+		&-form-btn {
+			padding: 17px 53px;
+		}
+		&-form-btn {
+			&-holder {
+				position: static;
+				display: table-cell;
+				width: 1px;
+
+				transform: none;
+			}
+		}
+	}
+	@include media-breakpoint-up(lg){
+		&-form-input-group {
+			
+		}
+		&-form-btn {
+			padding: 17px 53px;
+		}
+	}
+}

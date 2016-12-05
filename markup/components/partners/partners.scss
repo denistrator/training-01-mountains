@@ -1,0 +1,26 @@
+.partners {
+	&-list {
+		margin-left: -$grid-gutter-width-base / 2;
+		margin-right: -$grid-gutter-width-base / 2;
+		padding: 0;
+	    text-indent: 0;
+	    list-style: none;
+		text-align: justify;
+		font-size: 0;
+		&:after {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+		}
+	}
+	&-item {
+		display: inline-block;
+		font-size: initial;
+		margin-left: $grid-gutter-width-base / 2;
+		margin-right: $grid-gutter-width-base / 2;
+	}
+	&-link {
+		display: block;
+	}
+}

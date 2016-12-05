@@ -1,0 +1,45 @@
+#clientsQuotes {
+	overflow: hidden;
+}
+.clientsQuotes {
+	&-holder {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	&-quote {
+		font-size: 18px;
+		color: #adadad;
+		line-height: (33 / 18);
+		&:before {
+			@extend .icomoon-helper;
+			@extend .icon-icon-quote;
+			font-size: 22px;
+			color: #bcbcbc;
+		}
+		&:after {
+			content: '';
+		}
+	}
+	&-autor {
+		&-img {
+			&-holder {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 16px;
+			}
+			margin-right: 0;
+		}
+		&-data {
+			margin-top: 5px;
+			display: inline-block;
+			vertical-align: middle;
+			color: $accent;
+		}
+		&-name {
+			font-weight: 700;
+		}
+		&-position {
+			
+		}
+	}
+}

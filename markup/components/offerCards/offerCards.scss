@@ -1,0 +1,118 @@
+.offerCard {
+	&-slide {
+		text-align: center;	
+	}
+	&-holder {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 200px;
+		height: 382px;
+		overflow: hidden;
+		border-radius: 3px;
+		color: inherit;
+		text-align: initial;
+		
+		will-change: filter;
+		&:hover {
+			color: inherit;
+			.offerCard {
+				filter: brightness(1.2);
+				filter: contrast(1.2);
+			}
+			.offerCard-body {
+				transform: translate(0, -15px);
+			}
+			.offerCard-stars {
+				text-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+			}
+			.offerCard-price-old {
+				transform: scale(0.85);
+				transform-origin: center;
+			}
+			.offerCard-price-new {
+				transform: scale(1.15);
+				transform-origin: center;
+			}
+		}
+	}
+	@include table-fill-size;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	&-header {
+		display: table-header-group;
+		height: 1%;
+		&-inner {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 15px 0;
+		}
+	}
+	&-body {
+		display: table-row;
+
+		will-change: transform;
+		transition: transform 0.25s;
+		&-inner {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	&-footer {
+		display: table-footer-group;
+		height: 1%;
+		&-inner {
+			@include table-fill-size;
+			padding: 14px 0;
+		}
+	}
+	&-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	&-stars {
+		text-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+
+		transition: text-shadow 0.25s;
+	}
+	&-title {
+		margin: 40px 0 5px;
+		font-size: 28px;
+		font-weight: 400;
+	}
+	&-desc {
+		margin: 0;
+		line-height: (22 / 16);
+	}
+	&-price {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 18px;
+		
+		will-change: transform;
+		transition: transform 0.25s;
+		&-old {
+		}
+		&-new {
+			text-align: right;
+			font-size: (26 / 18 * 100) +%;
+			font-weight: 700;
+		}
+	}
+}
+.no-js {
+	.swiper-wrapper {
+		display: block;
+		margin-left: -10px;
+		margin-right: -10px;
+		text-align: center;
+	}
+	.swiper-slide{
+		display: inline-block;
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

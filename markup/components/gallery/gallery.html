@@ -1,0 +1,24 @@
+<div class="container-fluid">
+	<div id="gallery">
+		<div class="mt-m">
+			<h2 class="block-title">Gallery</h2>
+			<div class="mt-m">
+				<div class="gallery ver-indents-parent">
+					<div class="row">
+						{{#each gallery}}
+							<div class="{{classGrid}}">
+								<div class="gallery-item ver-indents-child">
+									<div class="{{classPosInGallery}}">
+										<div class="gallery-img-holder">
+											<img src="%=static=%/img/content/gallery/{{imgName}}.jpg" alt="" class="gallery-img">
+										</div>
+									</div>
+								</div>
+							</div>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

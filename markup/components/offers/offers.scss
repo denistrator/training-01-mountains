@@ -1,0 +1,25 @@
+.offers {
+	&-bg {
+		&-primary {
+			padding-bottom: 270px;
+
+			background-position: bottom center;
+			background-repeat: no-repeat;
+		}
+		&-secondary {
+			max-width: 1470px;
+			margin-left: auto;
+			margin-right: auto;
+
+			background-size: cover;
+			background-position: top 25px center;
+			background-repeat: no-repeat;
+			&-inner {
+				padding-bottom: in-perc(210, 1470);
+			}
+		}
+	}	
+}
+.mens-in-boats {
+	background-position: bottom left;
+}

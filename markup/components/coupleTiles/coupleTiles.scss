@@ -1,0 +1,181 @@
+.tiles-holder {
+	@include cf();
+	box-shadow: 0 0 21px rgba(6, 6, 6, 0.13);
+}
+.tile {
+	&-float-helper {
+		margin-bottom: $grid-gutter-width-base / 2;
+	}
+	&-holder {
+		@include cf();
+		& + & {
+			margin-top: $grid-gutter-width-base / 2;
+		}
+		&.horizontal {
+			.tile-content-box {
+				// &:before {
+				// 	position: absolute;
+				// 	top: 53 / 380 * 100%;
+				// 	left: -5px;
+				// }
+			}
+		}
+	}
+	&-content {
+		&-box {
+			position: relative;
+			background-color: #fff;
+			text-align: center;
+			&:before {
+				position: absolute;
+				top: -5px;
+				left: 53 / 380 * 100%;
+				content: '';
+				display: block;
+				width: 10px;
+				height: 10px;
+				background-color: #fff;
+				transform: rotate(45deg);
+			}
+		}
+		&-inner {
+			display: table;
+			width: 100%;
+			height: 100%;
+		}
+		&-aligner {
+			display: table-row;
+		}
+		&-aligner-2 {
+			display: table-cell;
+			vertical-align: middle;	
+		}
+	}
+	&-inner {
+		position: relative;
+		padding-bottom: 100%;
+	}
+	&-fill-size {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		overflow-y: auto;
+	}
+	&-img-holder {
+		
+	}
+	&-ico-holder {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+	&-title {
+		&:not(.prevent-tt) {
+			text-transform: uppercase;
+		}
+		margin: 0;
+		color: #16b5ef;
+	}
+	&-head {
+		&:not(.prevent-tt) {
+			text-transform: uppercase;
+		}
+		margin: 0;
+		color: #212121;
+	
+	}
+	&-desc {
+		margin: 0;
+		font-size: 15px;
+		line-height: 24px; // change on relative val 
+		color: #777;
+		padding: 0 15px;
+	}
+	&-number {
+		color: #212121;
+		font-family: "Times  New  Roman", serif;
+		font-size: 15px;
+		font-style: italic;
+
+	}
+	@include media-breakpoint-up(xs){
+		&-holder {
+			.tile-img-box {
+				width: 50%;
+				float: left;
+			}
+			.tile-content-box {
+				width: 50%;
+				float: left;
+				&:before {
+					top: 53 / 380 * 100%;
+					left: -5px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(md){
+		&-float-helper {
+			@include cf();
+			float: left;
+			width: 66.66%;
+			.tile-holder {
+				width: 100%;
+			}
+		}
+		&-holder {
+			width: 33.33%;
+			float: right;
+			& + & {
+				margin: 0;
+			}
+			.tile-img-box {
+				width: 100%;
+			}
+			.tile-content-box {
+				width: 100%;
+			}
+			&.vertical {
+				.tile-content-box {
+					&:before {
+						top: -5px;
+						left: 53 / 380 * 100%;
+					}
+				}
+			}
+			&.shift {
+				.tile-content-box {
+					&:before {
+						right: -5px;
+						left: auto;
+					}
+				}
+			}
+			&.horizontal {
+				.tile-img-box {
+					width: 50%;
+					float: left;
+				}
+				.tile-content-box {
+					width: 50%;
+					float: left;
+				}			
+			}
+			&.shift {
+				.tile-img-box {
+					float: right;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(lg){
+		&-holder {
+			.tile-desc {
+				padding: 0 10%;
+			}
+		}
+	}
+}

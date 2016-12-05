@@ -1,0 +1,33 @@
+<div class="mt-lg block-inverse">
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	    	{{#each offerCard}}
+			    <div class="swiper-slide offerCard-slide">
+					<a href="#" class="offerCard-holder">
+						<div class="offerCard" style="background-image: url('static/img/content/offerCards/card-{{img}}.jpg');">
+							<div class="offerCard-header">
+								<div class="offerCard-header-inner offerCard-container">
+									{{#repeat stars}}
+										<span class="offerCard-stars icon-bookmark-star"></span>
+									{{/repeat}}
+								</div>
+							</div>
+							<div class="offerCard-body">
+								<div class="offerCard-body-inner offerCard-container">
+									<h3 class="offerCard-title prevent-tt">{{title}}</h3>
+									<p class="offerCard-desc">{{desc}}</p>
+								</div>
+							</div>
+							<div class="offerCard-footer">
+								<div class="offerCard-footer-inner offerCard-container">
+									<span class="offerCard-price offerCard-price-old"><s>{{oldPrice}}$</s></span>
+									<span class="offerCard-price offerCard-price-new">${{newPrice}}</span>
+								</div>
+							</div>
+						</div>
+					</a>
+			    </div>
+	        {{/each}}
+	    </div>
+	</div>
+</div>
