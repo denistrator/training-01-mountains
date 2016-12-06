@@ -23,7 +23,9 @@ module.exports = {
         },
         "jsPathsToConcatBeforeModulesJs": [
             "bower_components/jquery/dist/jquery.min.js",
-            "bower_components/swiper/dist/js/swiper.jquery.min.js"
+            "bower_components/wow/dist/wow.min.js",
+            "bower_components/swiper/dist/js/swiper.jquery.min.js",
+            "markup/static/js/main.js"
         ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
