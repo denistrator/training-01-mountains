@@ -5,7 +5,8 @@
  */
 
 wow = new WOW({
-    offset: 50
+    offset: 50,
+    mobile: false
 })
 wow.init();
 
