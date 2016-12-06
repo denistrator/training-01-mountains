@@ -6,6 +6,43 @@
     </head>
 
     <body class="page">
+        <!-- preloader -->
+        <style type="text/css">
+            .preloader_bg {
+                position: fixed;
+                background: #fff;
+                width: 100%; height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1000; 
+            }
+            .preloader_content {
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 1001;
+            }
+            .preloader_content span {
+                display: block;
+                margin: auto;
+                font-size: 14px;
+                text-align: center;
+                color: #36aeea;
+            }
+        </style>
+        <div class="preloader_bg"></div>
+        <div class="preloader_content">
+            <img src="static/img/general/preloader.gif" alt="preloader">
+            <span>loading...</span>
+        </div>
+        <noscript>
+            <style>
+                html, body { opacity: 1 !important; }
+                .preloader_bg, .preloader_content { display: none !important; }
+            </style>
+        </noscript>
+        <!-- /preloader -->
         %=symbols=%
         <div class="wrapper">
             {{> jumbotron/jumbotron}}
