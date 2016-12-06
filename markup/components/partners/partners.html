@@ -5,7 +5,8 @@
 				<div class="partners">
 					<ul class="partners-list ver-indents-parent">
 						{{#each partner}}
-							<li class="partners-item ver-indents-child">
+							<li class="partners-item ver-indents-child wow fadeIn"
+								data-wow-delay="{{animDelay}}s">
 								<a href="#" class="partners-link"><img src="%=static=%/img/content/partners/{{imgName}}.png" alt="Partner" class="partners-img"></a>
 							</li>
 						{{/each}}

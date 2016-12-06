@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div id="scheme">
         <div class="mt-m">
-            <h2 class="block-title">HOW WE WORK</h2>
+            <h2 class="block-title wow fadeIn" data-wow-delay=".1s">HOW WE WORK</h2>
         </div>
     </div>
 </div>
@@ -13,10 +13,8 @@
                {{#each schemeItem}}
                <div class="col-xxs-8 offset-xxs-2 col-xs-6 offset-xs-0 col-md-3">
                    <div class="scheme-item ver-indents-child">
-                       <div class="scheme-number-box">
-                           <!-- <div class="scheme-number">{{number}}</div> -->
-                       </div>
-                       <div class="scheme-img">
+                       <div class="scheme-number-box wow pulse" data-wow-delay=".1s"></div>
+                       <div class="scheme-img wow pulse" data-wow-delay=".15s">
                            <div class="scheme-img-prop-helper">
                                <div class="scheme-img-inner">
                                    <div class="scheme-img-bg">
@@ -44,8 +42,7 @@
                                </div>
                            </div>
                        </div>
-                       <!-- <h4 class="scheme-title prevent-tt">{{title}}</h4> -->
-                       <p class="scheme-desc">{{desc}}</p>
+                       <p class="scheme-desc wow fadeIn" data-wow-delay=".1s">{{desc}}</p>
                    </div>
                </div>
                {{/each}}
