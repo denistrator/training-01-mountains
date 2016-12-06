@@ -2,6 +2,9 @@
 	&-scrollbar {
 		height: 2px;
 		top: 40px;
+		.no-js & {
+			display: none;
+		}
 		.swiper-scrollbar-drag {
 			top: auto;
 			bottom: 2px;
