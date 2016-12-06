@@ -24,7 +24,8 @@ module.exports = () => {
             `${jsFolderPath}/framework/**/*.js`,
             `${jsFolderPath}/libraries/**/*.js`,
             `${jsFolderPath}/plugins/**/*.js`,
-            `markup/${tars.config.fs.componentsFolderName}/**/*.js`
+            `markup/${tars.config.fs.componentsFolderName}/**/*.js`,
+            `markup/static/js/main.js`
         );
 
         return tars.packages.chokidar.watch(
