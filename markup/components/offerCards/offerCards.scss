@@ -1,4 +1,13 @@
 .offerCard {
+	&-scrollbar {
+		height: 2px;
+		top: 40px;
+		.swiper-scrollbar-drag {
+			top: auto;
+			bottom: 2px;
+			height: 6px;
+		}
+	}
 	&-slide {
 		text-align: center;	
 	}

@@ -1,5 +1,8 @@
 $(function(){
 	var mySwiper = new Swiper ('.swiper-container', {
+		scrollbar: ".offerCard-scrollbar",
+		scrollbarHide: false,
+		scrollbarDraggable: true,
 		slidesPerView: 5,
 		breakpoints: {
 			480: {
