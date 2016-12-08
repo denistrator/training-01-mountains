@@ -10,7 +10,7 @@ module.exports = {
         }
     },
     "css": {
-        "workflow": "concat"
+        "workflow": "manual"
     },
     "js": {
         "workflow": "concat",
@@ -50,7 +50,7 @@ module.exports = {
     "minifyHtml": false,
     "generateStaticPath": true,
     "buildPath": "./builds/",
-    "useBuildVersioning": true,
+    "useBuildVersioning": false,
     "useArchiver": true,
     "ulimit": 4096,
     "templater": "handlebars",
