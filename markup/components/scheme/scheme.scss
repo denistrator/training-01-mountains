@@ -18,7 +18,8 @@
 		}
 		&-inner {
 			padding: 15%;
-			@include abs-fill-size;
+			@extend %abs-fill-size;
+
 		}
 		&-bg {
 			height: 100%;
@@ -27,7 +28,7 @@
 		}
 		&-hexagon {
 			&-control {
-				@include abs-fill-size;
+				@extend %abs-fill-size;
 			}
 			&-box {
 				width: 100%;
@@ -41,9 +42,9 @@
 		}
 		&-ico {
 			&-control {
-				@include abs-fill-size;
+				@extend %abs-fill-size;
 			}
-			@include table-fill-size;
+			@extend %table-fill-size;
 			text-align: center;
 			color: #000;
 			line-height: 1;

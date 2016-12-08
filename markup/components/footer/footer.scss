@@ -41,7 +41,7 @@
             }
             &:after {
             	@extend .icomoon-helper;
-            	@include abs-fill-size;
+            	@extend %abs-fill-size;
 	            line-height: 40px;
 	            overflow: hidden;
 	            text-align: center;

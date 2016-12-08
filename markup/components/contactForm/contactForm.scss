@@ -19,7 +19,7 @@
 		}
 	}
 	&-blur {
-		@include abs-fill-size;
+		@extend %abs-fill-size;
 		max-width: 514px;
 		margin: auto;
 		padding-bottom: (in-perc(160));
@@ -34,7 +34,7 @@
 	}
 	&:after {
 		content: '';
-		@include abs-fill-size;
+		@extend %abs-fill-size;
 		z-index: -1;
 		background-color: #fff;
 		opacity: 0.3;

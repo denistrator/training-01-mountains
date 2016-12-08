@@ -61,7 +61,7 @@
 			}
 		}
 	}
-	@include table-fill-size;
+	@extend %table-fill-size;
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -89,7 +89,7 @@
 		display: table-footer-group;
 		height: 1%;
 		&-inner {
-			@include table-fill-size;
+			@extend %table-fill-size;
 			padding: 14px 0;
 		}
 	}
