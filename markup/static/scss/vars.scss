@@ -1,6 +1,9 @@
 // File for scss-vars.
 // For example: main colors, paddings and so on.
-@import "bower_components/bootstrap/scss/variables";
+
+// @import "bower_components/bootstrap/scss/variables";
+
+@import "vars-grid";
 
 // colors
 $accent: #36aeea;
@@ -62,52 +65,3 @@ $overlay-opacity:       0.65;
 
 $bg-darken: #f6f4f4;
 $bg-darken-2: #f8f9fa;
-
-
-
-
-
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
-$container-max-width: 1170;
-
-$grid-breakpoints: (
-  xxs: 0,
-  xs: 480px,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-);
-
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: (
-  xs: 480px,
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: $container-max-width + px
-);
-
-
-// Grid columns
-//
-// Set the number of columns and specify the width of the gutters.
-
-$grid-columns:               12;
-$grid-gutter-width-base:     30px;
-$grid-gutter-widths: (
- xxs: $grid-gutter-width-base,
-  xs: $grid-gutter-width-base,
-  sm: $grid-gutter-width-base,
-  md: $grid-gutter-width-base,
-  lg: $grid-gutter-width-base,
-  xl: $grid-gutter-width-base
-);
