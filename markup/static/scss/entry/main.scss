@@ -9,6 +9,9 @@
 /* Plugins, which is used in current project. */
 @import 'partials/_plugins.scss';
 
+/* Grid without unused classes by uncss */
+@import '../uncss-output/grid';
+
 /* Components, which is used in current project. */
 @import 'partials/_components.scss';
 
