@@ -1,0 +1,23 @@
+{
+  "name": "mountains",
+  "description": "Your awesome project description",
+  "main": "gulpfile.js",
+  "authors": [
+    "denis <denistrator@yandex.ua>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/denistrator/training-01-mountains",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "swiper": "^3.4.0",
+    "bootstrap": "v4.0.0-alpha.5",
+    "wow": "wowjs#^1.1.2"
+  }
+}
