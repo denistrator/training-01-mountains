@@ -4,9 +4,12 @@
   "description": "Your awesome project description",
   "main": "gulpfile.js",
   "directories": {},
-  "dependencies": {},
+  "dependencies": {
+    "critical": "^0.8.1"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-uncss": "^1.0.6"
   },
   "scripts": {
