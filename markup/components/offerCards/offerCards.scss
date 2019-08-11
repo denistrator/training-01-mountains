@@ -26,7 +26,7 @@
 		}
 	}
 	&-slide {
-		text-align: center;	
+		text-align: center;
 	}
 	&-holder {
 		box-sizing: border-box;
@@ -37,7 +37,7 @@
 		border-radius: 3px;
 		color: inherit;
 		text-align: initial;
-		
+
 		will-change: filter;
 		&:hover {
 			color: inherit;
@@ -97,7 +97,7 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	
+
 	&-stars {
 		text-shadow: 0px 1px 3px rgba(0,0,0,0.1);
 
@@ -116,14 +116,14 @@
 		display: table-cell;
 		vertical-align: middle;
 		font-size: 18px;
-		
+
 		will-change: transform;
 		transition: transform 0.25s;
 		&-old {
 		}
 		&-new {
 			text-align: right;
-			font-size: (26 / 18 * 100) +%;
+			font-size: (26 / 18 * 100) + '%';
 			font-weight: 700;
 		}
 	}
